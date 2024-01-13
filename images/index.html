@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-header">
+          <div class="logo"></div>
+          <i class="fas fa-bars hum"></i>
+        </div>
+        <div class="nav-links">
+          <!-- ======================== -->
+          <div class="dropdown">
+            <a href="#"><button class="link">flight school</button></a>
+            <div class="dropdown-content">
+              <a href="#">integrated ATPL</a>
+              <a href="#">zero to type Pack</a>
+              <div class="nested-dropdown">
+                <a href="#">
+                  <button class="link">
+                    modular ATPL
+                    <span><i class="fas fa-chevron-right"></i> </span>
+                  </button>
+                </a>
+                <div class="nested-dropdown-content">
+                  <a href="#">commercial pilot license</a>
+                  <a href="#">instrument rating</a>
+                  <a href="#">multi-engine piston</a>
+                  <a href="#">night rating</a>
+                </div>
+              </div>
+              <a href="#">private pilot license</a>
+              <div class="nested-dropdown">
+                <a href="#">
+                  <button class="link">
+                    Flight Instructor
+                    <span><i class="fas fa-chevron-right"></i> </span>
+                  </button>
+                </a>
+                <div class="nested-dropdown-content">
+                  <a href="#">flight instructor</a>
+                  <a href="#">IRI(A)</a>
+                  <a href="#">FI UPRT</a>
+                </div>
+              </div>
+              <a href="#">revalidations and renewals</a>
+              <a href="#">advanced UPRT</a>
+              <a href="#">performance-based navigation</a>
+              <a href="#">APS MCC</a>
+            </div>
+          </div>
+          <!-- =============================== -->
+          <div class="dropdown">
+            <a href="#"><button class="link">type rating</button></a>
+            <div class="dropdown-content">
+              <a href="#">Airbus A320</a>
+              <a href="#">ATR 42/72 500</a>
+              <a href="#">Boeing 737NG</a>
+              <a href="#">Boeing 757/767</a>
+              <a href="#">Boeing 777</a>
+              <a href="#">Embraer 190</a>
+              <a href="#">LPC and conversions</a>
+              <a href="#">TRI/SF1</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#"><button class="link">cabin crew</button></a>
+            <div class="dropdown-content">
+              <a href="#">initial courses</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#"><button class="link">other courses</button></a>
+            <div class="dropdown-content">
+              <a href="#">aircraft maintenance technician</a>
+              <a href="#">time building</a>
+              <div class="nested-dropdown">
+                <a href="#">
+                  <button class="link">
+                    professional enrichment
+                    <span><i class="fas fa-chevron-right"></i> </span>
+                  </button>
+                </a>
+                <div class="nested-dropdown-content">
+                  <a href="#">auditing and quality system</a>
+                  <a href="#">aviation air law course</a>
+                  <a href="#">nominated person</a>
+                  <a href="#">safety management system</a>
+                </div>
+              </div>
+              <div class="nested-dropdown">
+                <a href="#">
+                  <button class="link">
+                    recurrent training
+                    <span><i class="fas fa-chevron-right"></i> </span>
+                  </button>
+                </a>
+                <div class="nested-dropdown-content">
+                  <a href="#">aviation security level 7</a>
+                  <a href="#">crew resource management</a>
+                  <a href="#">dangerous goods regulation level 7</a>
+                  <a href="#">fire and smoke drill</a>
+                  <a href="#">first aid course</a>
+                  <a href="#">human factor</a>
+                  <a href="#">safety and emergency procedure </a>
+                  <a href="#">water drill</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#"><button class="link">shop</button></a>
+          </div>
+          <div class="dropdown">
+            <a href="#"><button class="link">about us</button></a>
+          </div>
+          <div class="dropdown">
+            <a href="#"><button class="link">contacts</button></a>
+            <div class="dropdown-content">
+              <a href="#">open day</a>
+              <a href="#">locations</a>
+              <a href="#">frequently asked questions</a>
+              <a href="#">human resources</a>
+              <a href="#">news</a>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <!-- ================================ -->
+        <div class="search-icon">
+          <a href="#">
+            <button class="nav-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </a>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC"
+          />
+        </div>
+      </nav>
+    </header>
+    <aside class="sidebar">
+      <i class="fas fa-times cross"></i>
+      <img src="./logo2.png"/ class="logo2">
+      <div class="side-links">
+        <!-- =================== -->
+        <div class="accordion">
+          <div class="accordion-section">
+            <div class="accordion-label" onclick="toggleSection(this)">
+              <a href="#"><button class="side-link">flight school</button></a>
+              <div class="icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="accordion-content">
+              <a href="#">integrated ATPL</a>
+              <a href="#">zero to type Pack</a>
+              <!-- Nested Accordion -->
+              <div class="nested-accordion">
+                <div class="accordion-section">
+                  <div class="accordion-label" onclick="toggleSection(this)">
+                    <a href="#">
+                      <button class="side-link">modular ATPL</button>
+                    </a>
+                    <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                  </div>
+                  <div class="accordion-content">
+                    <a href="#">commercial pilot license</a>
+                    <a href="#">instrument rating</a>
+                    <a href="#">multi-engine piston</a>
+                    <a href="#">night rating</a>
+                  </div>
+                </div>
+                <!-- Add more nested sections as needed -->
+                <a href="#">private pilot license</a>
+                <div class="nested-accordion">
+                  <div class="accordion-section">
+                    <div class="accordion-label" onclick="toggleSection(this)">
+                      <a href="#">
+                        <button class="side-link">Flight Instructor</button>
+                      </a>
+                      <div class="icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </div>
+                    </div>
+                    <div class="accordion-content">
+                      <a href="#">flight instructor</a>
+                      <a href="#">IRI(A)</a>
+                      <a href="#">FI UPRT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#">revalidations and renewals</a>
+              <a href="#">advanced UPRT</a>
+              <a href="#">performance-based navigation</a>
+              <a href="#">APS MCC</a>
+            </div>
+            <!-- ===================================================== -->
+            <div class="accordion-section">
+              <div class="accordion-label" onclick="toggleSection(this)">
+                <a href="#">
+                  <button class="side-link">type rating</button>
+                </a>
+                <div class="icon"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="accordion-content">
+                <a href="#">Airbus A320</a>
+                <a href="#">ATR 42/72 500</a>
+                <a href="#">Boeing 737NG</a>
+                <a href="#">Boeing 757/767</a>
+                <a href="#">Boeing 777</a>
+                <a href="#">Embraer 190</a>
+                <a href="#">LPC and conversions</a>
+                <a href="#">TRI/SF1</a>
+              </div>
+            </div>
+            <!-- Add more sections as needed -->
+            <div class="accordion-section">
+              <div class="accordion-label" onclick="toggleSection(this)">
+                <a href="#">
+                  <button class="side-link">cabin crew</button>
+                </a>
+                <div class="icon"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="accordion-content">
+                <a href="#">initail courses</a>
+              </div>
+            </div>
+            <!-- ============================================ -->
+            <div class="accordion">
+              <div class="accordion-section">
+                <div class="accordion-label" onclick="toggleSection(this)">
+                  <a href="#"
+                    ><button class="side-link">other courses</button></a
+                  >
+                  <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="accordion-content">
+                  <a href="#">aircraft maintenance tecnician</a>
+                  <a href="#">time building</a>
+                  <!-- Nested Accordion -->
+                  <div class="nested-accordion">
+                    <div class="accordion-section">
+                      <div
+                        class="accordion-label"
+                        onclick="toggleSection(this)"
+                      >
+                        <a href="#">
+                          <button class="side-link">
+                            professional enrichment
+                          </button>
+                        </a>
+                        <div class="icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+                      </div>
+                      <div class="accordion-content">
+                        <a href="#">auditing and quality system</a>
+                        <a href="#">aviation air law course</a>
+                        <a href="#">nominated person</a>
+                        <a href="#">safety management system</a>
+                      </div>
+                    </div>
+                    <!-- Add more nested sections as needed -->
+                    <div class="nested-accordion">
+                      <div class="accordion-section">
+                        <div
+                          class="accordion-label"
+                          onclick="toggleSection(this)"
+                        >
+                          <a href="#">
+                            <button class="side-link">
+                              recurrent training
+                            </button>
+                          </a>
+                          <div class="icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </div>
+                        </div>
+                        <div class="accordion-content">
+                          <a href="#">aviation security level 7</a>
+                          <a href="#">crew resource management system</a>
+                          <a href="#">dangerous good regulation level 10</a>
+                          <a href="#">fire and smoke drill</a>
+                          <a href="#">first aid course</a>
+                          <a href="#">human factors</a>
+                          <a href="#">safety and emergency procedures</a>
+                          <a href="#">water drill</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =============================== -->
+        <a
+          href="#"
+          style="
+            margin-left: 13px;
+            color: #ffffff;
+            display: block;
+            padding: 7px 0;
+          "
+          >shop</a
+        >
+        <a
+          href="#"
+          style="
+            margin-left: 13px;
+            color: #ffffff;
+            display: block;
+            padding: 7px 0;
+          "
+          >about us</a
+        >
+
+        <!-- =========================== -->
+        <div class="accordion-section">
+          <div class="accordion-label" onclick="toggleSection(this)">
+            <a href="#">
+              <button class="side-link">contacts</button>
+            </a>
+            <div class="icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-content">
+            <a href="#">open day</a>
+            <a href="#">location</a>
+            <a href="#">frequently asked questions</a>
+            <a href="#">human resources</a>
+            <a href="#">news</a>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <!-- ============================================ -->
+    </aside>
+    <!-- ======================================= -->
+    <section class="section-1">
+      <div class="center">
+        <div class="sec1">
+          <h1>TYPE <span>RATING </span></h1>
+        </div>
+        <!-- =================== -->
+        <div class="sec2">
+          <div class="div">
+            <span></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:serif="http://www.serif.com/"
+              width="100%"
+              height="100%"
+              viewBox="0 0 120 105"
+              xml:space="preserve"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 1.5;
+              "
+            >
+              <g transform="matrix(0.577264,0,0,0.577264,-463.982,-431.578)">
+                <g transform="matrix(0.5,0,0,0.5,376.498,375.077)">
+                  <path
+                    d="M859.581,762.085C859.581,755.5 864.927,750.154 871.512,750.154C873.999,750.154 876.31,750.917 878.222,752.221L878.222,752.221L1003.23,827.667L1003.23,827.667C1006.75,829.743 1009.11,833.573 1009.11,837.95C1009.11,842.158 1006.93,845.859 1003.63,847.984L1003.63,847.984L1003.63,847.985C1003.43,848.114 1003.23,848.238 1003.02,848.355L878.828,923.237L878.828,923.237C876.808,924.809 874.268,925.745 871.512,925.745C864.927,925.745 859.581,920.399 859.581,913.815L859.581,762.085Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(213, 59, 47);
+                      stroke-width: 10.11px;
+                    "
+                  ></path>
+                </g>
+                <path
+                  d="M859.581,762.085C859.581,755.5 864.927,750.154 871.512,750.154C873.999,750.154 876.31,750.917 878.222,752.221L878.222,752.221L1003.23,827.667L1003.23,827.667C1006.75,829.743 1009.11,833.573 1009.11,837.95C1009.11,842.158 1006.93,845.859 1003.63,847.984L1003.63,847.984L1003.63,847.985C1003.43,848.114 1003.23,848.238 1003.02,848.355L878.828,923.237L878.828,923.237C876.808,924.809 874.268,925.745 871.512,925.745C864.927,925.745 859.581,920.399 859.581,913.815L859.581,762.085Z"
+                  style="
+                    fill: none;
+                    stroke: rgb(27, 53, 99);
+                    stroke-width: 5.06px;
+                  "
+                ></path>
+                <g transform="matrix(0.59854,0,0,0.59854,319.73,350.903)">
+                  <path
+                    d="M859.581,762.085C859.581,755.5 864.927,750.154 871.512,750.154C873.999,750.154 876.31,750.917 878.222,752.221L878.222,752.221L1003.23,827.667L1003.23,827.667C1006.75,829.743 1009.11,833.573 1009.11,837.95C1009.11,842.158 1006.93,845.859 1003.63,847.984L1003.63,847.984L1003.63,847.985C1003.43,848.114 1003.23,848.238 1003.02,848.355L878.828,923.237L878.828,923.237C876.808,924.809 874.268,925.745 871.512,925.745C864.927,925.745 859.581,920.399 859.581,913.815L859.581,762.085Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(88, 94, 151);
+                      stroke-width: 8.45px;
+                    "
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span></span>
+            <!-- =============================== -->
+          </div>
+          <div class="div2">
+            <h2>IFA operates in the main European cities.</h2>
+          </div>
+          <!-- =============================== -->
+          <div class="div">
+            <span> </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:serif="http://www.serif.com/"
+              width="100%"
+              height="100%"
+              viewBox="0 0 120 105"
+              xml:space="preserve"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 1.5;
+              "
+            >
+              <g transform="matrix(0.577264,0,0,0.577264,-463.982,-431.578)">
+                <g transform="matrix(0.5,0,0,0.5,376.498,375.077)">
+                  <path
+                    d="M859.581,762.085C859.581,755.5 864.927,750.154 871.512,750.154C873.999,750.154 876.31,750.917 878.222,752.221L878.222,752.221L1003.23,827.667L1003.23,827.667C1006.75,829.743 1009.11,833.573 1009.11,837.95C1009.11,842.158 1006.93,845.859 1003.63,847.984L1003.63,847.984L1003.63,847.985C1003.43,848.114 1003.23,848.238 1003.02,848.355L878.828,923.237L878.828,923.237C876.808,924.809 874.268,925.745 871.512,925.745C864.927,925.745 859.581,920.399 859.581,913.815L859.581,762.085Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(213, 59, 47);
+                      stroke-width: 10.11px;
+                    "
+                  ></path>
+                </g>
+                <path
+                  d="M859.581,762.085C859.581,755.5 864.927,750.154 871.512,750.154C873.999,750.154 876.31,750.917 878.222,752.221L878.222,752.221L1003.23,827.667L1003.23,827.667C1006.75,829.743 1009.11,833.573 1009.11,837.95C1009.11,842.158 1006.93,845.859 1003.63,847.984L1003.63,847.984L1003.63,847.985C1003.43,848.114 1003.23,848.238 1003.02,848.355L878.828,923.237L878.828,923.237C876.808,924.809 874.268,925.745 871.512,925.745C864.927,925.745 859.581,920.399 859.581,913.815L859.581,762.085Z"
+                  style="
+                    fill: none;
+                    stroke: rgb(27, 53, 99);
+                    stroke-width: 5.06px;
+                  "
+                ></path>
+                <g transform="matrix(0.59854,0,0,0.59854,319.73,350.903)">
+                  <path
+                    d="M859.581,762.085C859.581,755.5 864.927,750.154 871.512,750.154C873.999,750.154 876.31,750.917 878.222,752.221L878.222,752.221L1003.23,827.667L1003.23,827.667C1006.75,829.743 1009.11,833.573 1009.11,837.95C1009.11,842.158 1006.93,845.859 1003.63,847.984L1003.63,847.984L1003.63,847.985C1003.43,848.114 1003.23,848.238 1003.02,848.355L878.828,923.237L878.828,923.237C876.808,924.809 874.268,925.745 871.512,925.745C864.927,925.745 859.581,920.399 859.581,913.815L859.581,762.085Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(88, 94, 151);
+                      stroke-width: 8.45px;
+                    "
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- ============================= -->
+      <div class="sec3">
+        <div class="sec4">
+          <p>
+            IFA provides up to date training conditions for professional pilots.
+            As aviation experts, we have trained hundreds of pilots over the
+            last 25 years who currently fly with various airlines across Europe,
+            Asia and Africa.
+          </p>
+        </div>
+        <div class="sec5">
+          <p>
+            Through our e-shop, pilots can buy courses online, choosing between
+            the main European cities.<span></span>
+              <a href="#"
+                >our shop to check our offer on courses and pilot gadgets.</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ================================= -->
+    <section class="section-2">
+      <div class="section-center">
+    <a href="#"><article class="article-1">
+        <img loading="lazy" decoding="async" width="80" height="69" src="https://ifa-training.com/wp-content/webp-express/webp-images/uploads/2021/12/ifa-rounded-bullet-multi-80px.png.webp" class="attachment-thumbnail size-thumbnail wp-image-8896" alt="ifa rounded bullet multi - Type Rating">
+      <h1>
+Airbus A320</h1>
+      </article></a>
+      <!-- ====================== -->
+          <a href="#"><article class="article-1">
+        <img loading="lazy" decoding="async" width="80" height="69" src="https://ifa-training.com/wp-content/webp-express/webp-images/uploads/2021/12/ifa-rounded-bullet-multi-80px.png.webp" class="attachment-thumbnail size-thumbnail wp-image-8896" alt="ifa rounded bullet multi - Type Rating">
+      <h1>
+
+ATR 42/72 500</h1>
+      </article></a>
+      <!-- ================== -->
+          <a href="#"><article class="article-1">
+        <img loading="lazy" decoding="async" width="80" height="69" src="https://ifa-training.com/wp-content/webp-express/webp-images/uploads/2021/12/ifa-rounded-bullet-multi-80px.png.webp" class="attachment-thumbnail size-thumbnail wp-image-8896" alt="ifa rounded bullet multi - Type Rating">
+      <h1>
+
+Boeing 737NG</h1>
+      </article></a>
+      <!-- ================== -->
+          <a href="#"><article class="article-1">
+        <img loading="lazy" decoding="async" width="80" height="69" src="https://ifa-training.com/wp-content/webp-express/webp-images/uploads/2021/12/ifa-rounded-bullet-multi-80px.png.webp" class="attachment-thumbnail size-thumbnail wp-image-8896" alt="ifa rounded bullet multi - Type Rating">
+      <h1>
+
+Boeing 757/767</h1>
+      </article></a>
+      <!-- =================== -->
+          <a href="#"><article class="article-1">
+        <img loading="lazy" decoding="async" width="80" height="69" src="https://ifa-training.com/wp-content/webp-express/webp-images/uploads/2021/12/ifa-rounded-bullet-multi-80px.png.webp" class="attachment-thumbnail size-thumbnail wp-image-8896" alt="ifa rounded bullet multi - Type Rating">
+      <h1>
+Boeing 777
+</h1>
+      </article></a>
+      <!-- ======================= -->
+          <a href="#"><article class="article-1">
+        <img loading="lazy" decoding="async" width="80" height="69" src="https://ifa-training.com/wp-content/webp-express/webp-images/uploads/2021/12/ifa-rounded-bullet-multi-80px.png.webp" class="attachment-thumbnail size-thumbnail wp-image-8896" alt="ifa rounded bullet multi - Type Rating">
+      <h1>
+Embraer 190</h1>
+      </article></a>
+      </div>
+    </section>
+    <!-- =================================== -->
+    <section class="section-3">
+      <div class="cen">
+        <h2>Type Rating Instructor</h2>
+        <div class="art">
+        <article class="art1">
+          <p>If you enjoy passing on knowledge and experience to young pilots this program allows you to provide instruction in multi-pilot aircraft type ratings, LPCs and MCC courses.</p>
+        </article>
+        <article class="art1">
+         <p>The course is conducted using a mix of classroom and Full Flight Simulator (FFS) and takes the candidate through the essential practical exercises of instruction required to qualify for type rating instructor.</p>
+        </article>
+        </div>
+        <div class="bttn">
+          <button class="btn1">VIEW COURSE</button>
+        </div>
+      </div>
+    </section>
+    <!-- ================================ -->
+    <section class="section-4">
+      <div class="title">
+      <h1>
+License Proficiency Check (LPC)
+</h1>
+</div>
+<div class="section4-center">
+  <article class="art3">
+    <img src="./img-1.webp" class="sec4-img" />
+  </article>
+  <articel class="art4">
+    <p>You can revalidate or renew your expiring rating with our LPC program. The composition of the training is determined case by case.</p>
+  <p>The program depends on factors such as aircraft complexity, Rating, Class and the validation date.</p>
+<button class="btn1">VIEW COURSE</button>  
+</articel>
+</div>
+    </section>
+    <!-- ====================================== -->
+    <section class="section-5">
+      <div class="section5-center">
+        <article class="art5">
+          <h2>You can buy these pilot courses at our e-shop!</h2>
+          <button class="btn1">VISIT SHOP</button>
+        </article>
+        <article class="art6">
+          <img src="./img-2.webp" class="art6-img" />
+        </article>
+      </div>
+    </section>
+    <!-- ==================== -->
+    <section class="section-6">
+      <div class="need">
+        <h1>NEED MORE INFORMATION?</h1>
+      </div>
+      <div class="need-center">
+        <label for="">Name <span>*</span>
+</label><br>
+<input type="text" class="input" />
+<div class="inputs">
+  <div>
+          <label for="">email <span>*</span>
+</label><br>
+<input type="text" class="input" /></div>
+<div>
+          <label for="">phone <span>*</span>
+</label><br>
+<div class="phone">
+  <div class="ph">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" />
+<i class="fas fa-chevron-down" style="color: gray;"></i>
+</div>
+  <input type="text" class="input"  placeholder="                +351912 345 678"/></div>
+</div>
+</div>
+          <label for="">type rating
+</label><br>
+<select>
+  <option value="">airbus 320</option>
+    <option value="">boeing 737</option>
+  <option value="">boeing 757/767</option>
+  <option value="">boeing 777</option>
+  <option value="">ATR 42/72/500</option>
+  <option value="">embraer 190</option>
+
+</select>
+          <label for="">message<span>*</span>
+</label><br>
+<textarea></textarea>
+      </div>
+      <div class="policy">
+      <p>IFA's <span class="high">Privacy Policy *</span></p>
+      <input type="checkbox" />
+      <span>I have read and agree with IFA's Privacy Policy</span>
+      <p>Newsletter</p>
+        <input type="checkbox" />
+  <span>I have read and agree with IFA's Privacy Policy</span>
+  <a href=""><button class="btn1">send</button></a>
+      </div>
+    </section>
+    <!-- ================================ -->
+    <section class="contact">
+      <div class="contact-center">
+        <img src="logo.png" />
+        <div class="con1">
+          <h3>OUR ACADEMY</h3>
+          <p>Flight School</p>
+          <p>Type Rating</p>
+          <p>Cabin Crew
+</p>
+<p>Aircraft Maintenance
+</p>
+        </div>
+        <div class="con2">
+                    <h3>locations</h3>
+          <p class="bold">Cascais Airport</p>
+          <p>R.Bartolomeu de Gusmão 118,
+</p>
+          <p>2785-269, Tires, Portugal
+
+</p>
+<p>+351 219 246 380</p>
+<p class="bold">Viseu Airport
+</p>
+<p>Avenida do Aeródromo, Hangar 5
+</p>
+<p>3515-342 Viseu, Portugal
+</p>
+<p>+351 232 244 286
+</p>
+        </div>
+      </div>
+    </section>
+    <!-- ================================== -->
+    <footer class="footer">
+      <div class="footer-center">
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2023 IFA - International Flight Academy. All Rights Reserved.</p>
+        <p>Terms Of Use | Privacy Policy</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
