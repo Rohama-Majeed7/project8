@@ -597,15 +597,20 @@ License Proficiency Check (LPC)
     </div>
 
     <label for="type-rating">Type Rating</label><br>
-    <select id="type-rating" class="input">
-      <option></option>
-      <option>Airbus 320</option>
-      <option>Boeing 737</option>
-      <option>Boeing 757/767</option>
-      <option>Boeing 777</option>
-      <option>ATR 42/72/500</option>
-      <option>Embraer 190</option>
-    </select>
+
+<div class="container">
+        <button class="select" name="select" value="options"></button>
+        <i class="fas fa-chevron-down do"></i>
+        <div class="options">
+            <p class="item"></p>
+            <p class="item">Airbus 320</p>
+            <p class="item">Boeing 737</p>
+            <p class="item">Boeing 757/767</p>
+            <p class="item">Boeing 777</p>
+            <p class="item">Embraer 190</p>
+            <p class="item">ATR 42/72/500</p>
+        </div>
+    </div>
 
     <label for="message">Message <span>*</span></label><br>
     <textarea id="message"></textarea>
