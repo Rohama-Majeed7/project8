@@ -5,6 +5,9 @@
   text-transform: capitalize;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
 }
@@ -12,6 +15,9 @@ body {
   border-bottom: 1px solid #33c2ff;
   background-color: #ffffff;
   height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav {
   display: flex;
@@ -32,7 +38,8 @@ body {
   display: none;
 }
 .search-icon img,
-.search-icon i ,.search-icon button{
+.search-icon i,
+.search-icon button {
   display: none;
 }
 .nav-links a {
@@ -57,6 +64,11 @@ body {
   color: #1b3563;
   border: none;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.link i {
+  margin-left: 3rem;
 }
 .link:hover {
   color: #33c2ff;
@@ -72,10 +84,12 @@ body {
   border: 1px solid #33c2ff;
   z-index: 1;
   top: 3rem;
+  transition: all 1s linear;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: all 1s linear;
 }
 
 /* Additional styling for the nested dropdown */
@@ -122,11 +136,24 @@ body {
   color: #ffffff;
   display: block;
   padding: 0.2rem;
+  font-weight: bold;
+}
+.sel {
+  position: relative;
+}
+.sel i {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  color: #76848c;
 }
 .side-link {
   background-color: transparent;
   border: none;
   color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  /* display: block; */
 }
 .side-link:hover {
   color: #33c2ff;
@@ -150,13 +177,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 2px;
   cursor: pointer;
   background-color: transparent;
   transition: all 0.5s linear;
 }
+.accordion-label .side-link {
+  font-size: 1.1rem;
+}
+.accordion-content .side-link {
+  font-size: 1rem;
+  /* white-space: nowrap; */
+}
 .side-link {
   color: white;
+  text-align: left;
+}
+.nested-dropdown-content .side-link {
+  font-size: 1rem;
 }
 /* Style for up and down signs */
 
@@ -187,6 +225,7 @@ body {
   transition: all 0.5s linear;
   padding: 2rem;
   font-weight: bold;
+  /* overflow: scroll; */
 }
 .logo2 {
   width: 60%;
@@ -204,8 +243,8 @@ body {
   font-size: 2rem;
   cursor: pointer;
 }
-.sidebar .cross:hover{
-  transform: rotateY('360deg');
+.sidebar .cross:hover {
+  transform: rotateY("360deg");
 }
 .icon {
   text-transform: lowercase;
@@ -229,9 +268,9 @@ body {
 }
 .hum {
   color: #33c2ff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
-  right: 5px;
+  right: 10px;
 }
 .sidebar.showbar {
   transform: translateX(0%);
@@ -241,12 +280,16 @@ body {
   margin-top: 2rem;
 }
 .social-links i {
-  color: blue;
+  color: #33c2ff;
   margin: 5px;
 }
 /* ========================== */
 .section-1 {
-  background-color: #ffffff;
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -500px;
+  margin-top: 8rem;
 }
 .center {
   width: 80vw;
@@ -345,6 +388,7 @@ body {
     url("./img-3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .art {
   display: grid;
@@ -369,6 +413,7 @@ body {
   color: #1b3563;
   padding: 1.4rem 2rem;
   border-radius: 3rem;
+  transition: all 1s linear;
 }
 .btn1:hover {
   background: #0a1b22;
@@ -398,7 +443,7 @@ body {
   line-height: 1.5;
   align-items: center;
 }
-.section4-center p{
+.section4-center p {
   color: #76848c;
 }
 .btn1 {
@@ -483,12 +528,12 @@ label span {
   margin: 0 auto;
 }
 .policy p {
-  color: #76848c;
+  color: #6d7072;
   font-weight: bold;
 }
 .policy span {
-  color: #76848c;
-  font-weight: bold;
+  color: #6a6c6d;
+  font-weight: lighter;
 }
 .high {
   color: #33c2ff;
@@ -537,10 +582,10 @@ label span {
 }
 .social a {
   border: 1px solid white;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 50%;
   color: white;
-  margin: 0.4rem;
+  margin: 0.2rem;
 }
 .phone {
   position: relative;
@@ -550,15 +595,33 @@ label span {
   top: 45px;
   left: 20px;
 }
+.fixed {
+  padding: 0.8rem;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  background-color: #33c2ff;
+  border-radius: 3rem;
+  color: #1b3563;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.fixed:hover {
+  color: #ffffff;
+  background-color: #1b3563;
+}
 @media screen and (min-width: 950px) {
   .nav-links {
     display: flex;
+    margin-right: 15rem;
   }
   .need h1 {
     font-size: 3.5rem;
   }
   .search-icon img,
-  .search-icon i ,.search-icon button{
+  .search-icon i,
+  .search-icon button {
     display: inline;
   }
   .search-icon {
@@ -584,6 +647,13 @@ label span {
   .sec1 {
     margin: 2rem auto;
   }
+  .section-1 {
+    background: linear-gradient(#ffffff, #ffffffc0),
+      url("./Untitled\ design\ \(91\).png");
+      background-repeat: no-repeat;
+      background-position: -500px;
+      background-size: cover;
+  }
   .sec3 {
     grid-template-columns: repeat(2, 1fr);
     width: 90vw;
@@ -596,17 +666,21 @@ label span {
   .article-1 h1 {
     font-size: 4rem;
   }
+  .section-1 {
+    margin-top: 10rem;
+  }
   .art {
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
-  .cen{
+  .cen {
     gap: 3rem;
   }
   .cen h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .title h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .section4-center {
     grid-template-columns: repeat(2, 1fr);
@@ -625,6 +699,10 @@ label span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  .need h1 {
+    font-size: 2.9rem;
+    padding-top: 2rem;
   }
   .contact {
     display: block;
