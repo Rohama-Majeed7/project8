@@ -130,7 +130,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  transition: all 0.5s linear;
+}
+.side-link{
+  display: block;
 }
 .accordion-content a {
   color: #ffffff;
@@ -177,7 +179,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  padding: 5px 0;
   cursor: pointer;
   background-color: transparent;
   transition: all 0.5s linear;
