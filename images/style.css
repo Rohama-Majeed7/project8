@@ -305,7 +305,7 @@ body {
 }
 .slide {
   min-width: 100%;
-  height: 500px;
+  height: 300px;
   box-sizing: border-box;
 }
 .slide img {
@@ -588,10 +588,7 @@ select {
   color: #6a6c6d;
 }
 
-.select:hover {
   /* background: #222222; */
-}
-
 .select.active {
   /* background: #222222; */
   border-bottom-left-radius: 0;
@@ -634,9 +631,8 @@ select {
   cursor: pointer;
 }
 
-.options .item.active {
   /* background: #292929; */
-}
+
 input[type="text"]:focus,
 select:focus,
 textarea:focus {
@@ -752,6 +748,9 @@ label span {
   .nav-links {
     display: flex;
     margin-right: 15rem;
+  }
+  .slider-container{
+    height: 500px;
   }
   .need h1 {
     font-size: 3.5rem;
