@@ -103,3 +103,32 @@ const setValue = () => {
 };
 
 setValue();
+// ==================================================
+let currentIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  if (index < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (index >= totalSlides) {
+    currentIndex = 0;
+  } else {
+    currentIndex = index;
+  }
+
+  const translateValue = -currentIndex * 100 + "%";
+  document.querySelector(".slider").style.transform =
+    "translateX(" + translateValue + ")";
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+
+// Automatic slide change every 3 seconds (adjust as needed)
+setInterval(nextSlide, 7000);
