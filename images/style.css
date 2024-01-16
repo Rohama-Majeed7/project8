@@ -228,7 +228,12 @@ body {
   transition: all 0.5s linear;
   padding: 2rem;
   font-weight: bold;
-  /* overflow: scroll; */
+  overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar{
+background-color:transparent;
+border-radius: 5rem;
+size: 1rem;
 }
 .logo2 {
   width: 60%;
@@ -332,6 +337,13 @@ body {
 .next {
   right: 10px;
 }
+.sidebar .icons{
+  display: flex;
+  margin-top: 5px;
+}
+.icons img{
+background: transparent;}
+
 /* ================= */
 .section-1 {
   background: #ffffff;
